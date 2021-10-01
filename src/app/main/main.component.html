@@ -12,20 +12,34 @@
     </div>
   </div>
 -->
-
-
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@500&display=swap');
+        </style>        
+ </head>
 <div fxLayout="column">
-    <mat-toolbar class="toolbar" fxLayout="row" fxFlex="grow shrink 100%" style="background-color:rgba(255, 255, 255, 0)">
+    <mat-toolbar class="toolbar" fxLayout="row" fxFlex="grow shrink 100%"
+        style="background-color:rgba(255, 255, 255, 0)">
         <div class="logo" fxFlex="10">
             <img src="assets/tenatrans.png" height="35px">
         </div>
-        <div class="material_icon" fxFlex="grow-shrink 100%" fxLayoutAlign="end end">
-        <img src="assets/hamburger.png" height="25px">
-        </div>  
-    </mat-toolbar>
 
+        <div class="material_icon" fxFlex="grow-shrink 100%" fxLayoutAlign="end end">
+            <button mat-button
+                style="background-color: rgb(34, 179, 204); width:140px;border-radius:65px;color: white;">
+                Contact Us
+            </button>
+        </div>
+
+        <div fxLayout=row fxLayoutGap=10px>
+
+        </div>
+    </mat-toolbar>
+    <div>
+
+    </div>
     <!--Carousel Section Code Liner 67:103-->
-    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel-slide" data-ride="carousel">
         <ol class="carousel-indicators">
             <li data-target="#myCarousel" data-slide-to="0" class="active">
 
@@ -35,12 +49,26 @@
             </li>
         </ol>
         <div class="carousel-inner">
-            <div class="carousel-item active">
-                <div class="overlay-image" style="background-image:url(assets/blue.png);">
+            <div class="carousel-item active" fxLayoutAlign="center center">
+                <div class="overlay-image" style="background-image:linear-gradient(to bottom, rgba(116, 116, 116, 0.781), rgba(51, 128, 141, 0.952)),
+                url('assets/blue.png');color: white;" fxLayoutAlign="center center" fxLayout="column">
+                    <div style="width: 60%; text-align: center;bottom: 85px;position: relative;" fxLayoutGap="25px" fxLayout="column">
+                        <h1 style="color: white;font-size: 58px;font-family:'Ubuntu', sans-serif;">Transportation Adaptability & Foresight with Network Scale.</h1>
+                        <p style="color: white; font-size: 25px;font-family:'Ubuntu', sans-serif;">The Tena network reaches across the transportation industry to connect
+                            shippers, carriers,
+                            brokers and other market participants, introducing unprecedented levels of transparency,
+                            planning, and coordination.</p>
+                    </div>
+                    <div class="custom-shape-divider-bottom-1632909480">
+                        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                            preserveAspectRatio="none">
+                            <path
+                                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                                class="shape-fill"></path>
+                        </svg>
+                    </div>
                 </div>
-                <div class="container">
-                    <h1>Trucking Logistics</h1>
-                </div>
+
             </div>
             <div class="carousel-item">
                 <div class="container">
@@ -56,82 +84,95 @@
             <span class="sr-only"></span>
             <span class="carousel-control-next-icon" aria-hidden="true"></span>
         </a>
+
     </div>
 
+    <!--
+<div style="background-image:linear-gradient(to bottom, rgba(255, 255, 255, 0.082), rgba(41, 207, 236, 0.952)),
+url('assets/blue.png'); height: 47.5rem;">
+
+</div>
+-->
     <!--White Block beneath Carousel  104:144-->
     <div class="container_2" fxFlex="100">
-        <div class="card_box" fxLayout="row" fxLayoutAlign="center center" fxFlex="1 1 100%">
-            <mat-card class="card">
-                <mat-card-title>
-                    <h1></h1>
+        <div class="card_box" fxLayout="row" fxLayoutGap="55px" fxLayoutAlign="center center" fxFlex="1 1 100%">
+            <mat-card class="card mat-elevation-z8" fxLayoutAlign="start center" fxLayout="column">
+                <mat-card-title class="material-icons-outlined md-48" style="color:rgb(255, 102, 0);">
+                    tungsten
                 </mat-card-title>
+                <mat-card-subtitle style="color: rgb(95, 95, 95);">New Ideas</mat-card-subtitle>
                 <mat-card-content>
-
+                    <p style="color: darkgrey; font-weight: 100; text-align: center;">Tena is always expanding and
+                        discovering new ways of managing loads. With our in house software we will revolutionize the
+                        transportation industry.</p>
                 </mat-card-content>
             </mat-card>
-            <mat-card class="card2">
-                <mat-card-title>
-                    <h1></h1>
+            <mat-card class="card mat-elevation-z8" fxLayoutAlign="start center" fxLayout="column">
+                <mat-card-title class="material-icons-outlined md-48" style="color:rgb(255, 102, 0);">
+                    business_center
                 </mat-card-title>
+                <mat-card-subtitle style="color: rgb(95, 95, 95);">Network</mat-card-subtitle>
                 <mat-card-content>
-
+                    <p style="color: darkgrey; font-weight: 100; text-align: center;">We partner with a hand full of
+                        Carriers and Brokers who help build a portion of the transportation industry.</p>
                 </mat-card-content>
             </mat-card>
-            <mat-card class="card3">
-                <mat-card-title>
-                    <h1></h1>
+            <mat-card class="card mat-elevation-z8" fxLayoutAlign="start center" fxLayout="column">
+                <mat-card-title class="material-icons md-48" style="color:rgb(255, 102, 0);">
+                    trending_up
                 </mat-card-title>
+                <mat-card-subtitle style="color: rgb(95, 95, 95);">Statistcs</mat-card-subtitle>
                 <mat-card-content>
-
+                    <p style="color: darkgrey; text-align: center;">Tena is always expanding and discovering new ways of
+                        managing loads. With our in house software we will revolutionize the transportation industry.
+                    </p>
                 </mat-card-content>
             </mat-card>
-            <mat-card class="card4">
-                <mat-card-title>
-                    <h1></h1>
+            <mat-card class="card mat-elevation-z8" fxLayoutAlign="start center" fxLayout="column">
+                <mat-card-title class="material-icons md-48" style="color:rgb(255, 102, 0);">
+                    schedule
                 </mat-card-title>
+                <mat-card-subtitle style="color: rgb(95, 95, 95);">24/7</mat-card-subtitle>
                 <mat-card-content>
-
+                    <p style="color: darkgrey; font-weight: 100; text-align: center;">We are a dedicated team, working
+                        24/7 to keep our Drivers, Carriers and Brokers well informed and supported.</p>
                 </mat-card-content>
             </mat-card>
         </div>
     </div>
 
 
-    <div class="container_3" fxlayout="row" flex="grow shrink 100%">
-        <div fxFlex="grow shrink 100%">
-            <div fxFlex="10">
+    <div fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center" flex="grow shrink 100%"
+        style="margin-bottom: 180px;margin-top: 75px;">
 
-            </div>
-            <div class="about_comp" fxFlex="20" fxLayoutAlign="center top">
-                <h1><strong>ABOUT COMPANY</strong></h1>
-            </div>
-            <div fxFlex="8">
+        <h1 style="color: rgb(95, 95, 95);">About Us</h1>
+        <p style="max-width:870px; text-align: center; color: darkgrey; font-size: 22px;">Here at Tena we believe in
+            innovation. The power of change gives us the upper hand. Utilizing
+            the latest management software, fleet tracking and communications devices, Tena transport will not only grow
+            with the market but also mold it.</p>
 
-            </div>
-            <div fxFlex="35">
-                <img class="TRUCKER" src="assets/trucker.PNG">
-            </div>
-            <div class="about_paragraph" fxLayout="column" fxFlex="25" fxLayoutAlign="end center">
-                <p>Some really importnat stuff will go right here that explaiens what the company does and the value it
-                    provides.jhbedvj ihebjg ierhjh fjewhfjwjkw efkjwebn ejeriogr jgoierjoi poiwej gpowei jjwpgeiog
-                    jwepoig df efg fdfd e gg edg g fdgbd fgb erh wrhg eg heg h egb edhb eh egrh grh egr </p>
-                <div class="square">
-
-                </div>
-            </div>
-        </div>
     </div>
-    <div class="black">
+
+
+    <!--
+        <div class="black">
         <div class="container_4" fxFlex="100" style="background-image:url(assets/log2.jpg)">
 
         </div>
     </div>
+    <div fxLayout="column" fxLayoutGap="20px" fxLayoutAlign="center center" flex="grow shrink 100%"
+        style="height: 700px;">
 
+        
+
+    </div>
+-->
+    <!---
     <div class="container_5">
 
     </div>
 
-<!---
+
     <div class="container_2" fxLayout="column">
         <div fxLayout="column" >
             <div class="container_1" fxFlex="1 1 100%" style="background-color: rgb(79, 164, 179); max-height: 50%;">
@@ -165,6 +206,85 @@
     </div>
 
 -->
+
+    <div fxLayout="Column" class="contact_div" fxLayoutGap="20px">
+        <div class="custom-shape-divider-top-1632909775">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+        <div fxFlex=15 fxLayoutAlign="center">
+            <h1
+                style="font-weight: 600; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;padding-top: 60px;">
+                GET IN
+                TOUCH</h1>
+        </div>
+        <div fxFlex=80 fxLayout="Row" fxLayoutAlign="center start" fxLayoutGap="130px">
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" fxFlex=10>
+                <span
+                    style="background-color: rgb(174, 199, 199);color: white;border-radius: 50px; height: 90px;width: 90px;"
+                    class="material-icons md-48" fxLayoutAlign="center center">room</span>
+                <h3 style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;">Address</h3>
+                <span style="font-weight: bold;text-align: center;">Casa Grande Office</span>
+                <span style="text-align:center;">1146 Jimmie Kerr Blvd,
+                    Casa Grande, AZ 85122</span>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" fxFlex=10>
+                <span
+                    style="background-color: rgb(174, 199, 199);color: white;border-radius: 50px; height: 90px;width: 90px;"
+                    class="material-icons md-48" fxLayoutAlign="center center">phone</span>
+                <h3
+                    style="font-weight:800; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;">
+                    Phone</h3>
+                <span style="font-weight: bold;text-align: center;">General</span>
+                <span style="text-align:center;">(520) 421-3173</span>
+                <span style="font-weight: bold;text-align: center;">Accounting</span>
+                <span style="text-align:center;">(520) 836-5664</span>
+                <span style="font-weight: bold;text-align: center;">Broker Contact</span>
+                <span style="text-align:center;">(520) 510-0905</span>
+            </div>
+            <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px" fxFlex=10>
+                <span
+                    style="background-color: rgb(174, 199, 199);color: white;border-radius: 50px; height: 90px;width: 90px;"
+                    class="material-icons md-48" fxLayoutAlign="center center">email</span>
+                <h3
+                    style="font-weight:800; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-weight: 600;">
+                    Email</h3>
+                <span style="font-weight: bold;text-align: center;">General</span>
+                <span style="text-align:center;">tena@tenalogistics.com</span>
+                <span style="font-weight: bold;text-align: center;">Accounting</span>
+                <span style="text-align:center;">accounting@tenatrans.com</span>
+                <span style="font-weight: bold;text-align: center;">Human Resources</span>
+                <span style="text-align:center;">hr@tenatrans.com</span>
+            </div>
+        </div>
+        <div class="custom-shape-divider-bottom-1632909995">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120"
+                preserveAspectRatio="none">
+                <path
+                    d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z"
+                    opacity=".25" class="shape-fill"></path>
+                <path
+                    d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z"
+                    opacity=".5" class="shape-fill"></path>
+                <path
+                    d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z"
+                    class="shape-fill"></path>
+            </svg>
+        </div>
+    </div>
+
+
+    <!--
     <div class="container_6" fxLayout="row wrap" fxFlex="100">
         <div fxFlex="1 1 100%" fxLayoutAlign="center center">
 
@@ -178,14 +298,62 @@
             </form>
         </div>
     </div>
+-->
+    <div fxLayout="row" style="height: 550px;">
+        <div fxFlex=50 fxLayout="column" fxLayoutAlign="center start" fxLayoutGap="25px" style="padding-left: 14%;">
+            <h1
+                style="color: rgb(37, 43, 99); text-align: start; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;font-size: 50px;font-weight: 600">
+                Message Us</h1>
+            <p style="color: darkgrey;max-width: 450px;">If you wish to be considered for employment at Tena Transport,
+                please do not send a message, here – instead, please complete Tena Transport's job application and our
+                Human Resources
+                department will contact you after their review of your submitted information.</p>
+        </div>
+        <div fxFlex=50 fxLayout="column" fxLayoutGap="25px" fxLayoutAlign="center start" >
+            <div fxLayout="row" fxLayoutGap="30px">
 
+                <input matInput
+                    style="background-color: rgb(255, 255, 255);width:235px;height: 40px;border-radius:3px;color: black;border-width:thin; height:95%;"
+                    type="text" placeholder="First Name" value="">
+
+                <input
+                    style="background-color: rgb(255, 255, 255);width:235px;height: 40px;border-radius:3px;color: black;"
+                    type="text" placeholder="Last Name" value="">
+            </div>
+            <div>
+                <input
+                    style="background-color: rgb(255, 255, 255);width:500px;height: 40px;border-radius:3px;color: black;"
+                    type="text" placeholder="Email" value="">
+            </div>
+            <div>
+                <input
+                    style="background-color: rgb(255, 255, 255);width:500px;height: 150px;border-radius:3px;color: black; margin-bottom: 10px;"
+                    type="text" placeholder="Message" value="">
+            </div>
+            <div>
+                <div class="material_icon" fxFlex="grow-shrink 100%">
+                    <button mat-button
+                        style="background-color: rgb(34, 179, 204); width:60px;min-height:50px;border-radius:100px;color: white;font-weight: bold;">
+                        <span class="material-icons-outlined">
+                            send
+                        </span>
+
+
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!--Carousel Section Code Liner 303:354--->
+
     <div class="container_2" fxlayout="row" fxFlex="100">
-        <div fxFlex="1 1 100%" fxLayout="column" fxLayoutAlign="center center"
-            style="background-color: rgb(90, 92, 95); max-height: 50%;">
-            <h4>Tena Transportation Inc.</h4>
-            <h7>Casa Grande,Arizona 85122</h7>
+        <div fxFlex="1 1 100%" fxLayout="row" fxLayoutAlign="space-between center"
+            style=" max-height: 50%;color: gray;padding-left: 10%;padding-right: 10%;padding-bottom: 1%;">
+            <p style="font-weight:bold; font-size: 13px;">POSTREMO STUDIO</p>
+            <p style="font-size: 13px;">© 2021 Postremo Studio</p>
+
         </div>
     </div>
 
 </div>
+<!--tenawebsiteEND-->
