@@ -43,6 +43,19 @@ import {MatTableModule} from '@angular/material/table';
 import {MatSortModule} from '@angular/material/sort';
 import {MatPaginatorModule} from '@angular/material/paginator';
 
+
+var firebaseConfig = {
+  apiKey: "AIzaSyDRdOzGBJAdQVPrcBdGipVGIkjra294UmU",
+  authDomain: "tena-website.firebaseapp.com",
+  databaseURL: "https://tena-website-default-rtdb.firebaseio.com",
+  projectId: "tena-website",
+  storageBucket: "tena-website.appspot.com",
+  messagingSenderId: "58959556055",
+  appId: "1:58959556055:web:7ea213d14cba357bab2f92",
+  measurementId: "G-SPMWKW6HSD"
+};
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -51,7 +64,7 @@ import {MatPaginatorModule} from '@angular/material/paginator';
   imports: [
 
     BrowserModule,
-
+    AngularFireModule.initializeApp(firebaseConfig),
     AppRoutingModule,
     AngularFireModule.initializeApp(environment),
     AngularFireDatabaseModule,
